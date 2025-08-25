@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: vite-tailwind-pod
+  namespace: vite-tailwind
+spec:
+  containers:
+  - name: vite-tailwind
+    image: embers10/fbclone:v2
+    port:
+    - containerPort: 80
